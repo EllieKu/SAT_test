@@ -19,10 +19,10 @@ def processing_meat(employee_name, unprocessed_meat, lock):
             if not unprocessed_meat:
                 break
             meat = unprocessed_meat.pop()
-            print(f"{employee_name} 在 {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} 取得 {meat}")
+            print(f"{employee_name} 在 {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} 取得{meat}")
 
         time.sleep(meat_processing_time[meat])
-        print(f"{employee_name} 在 {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} 處理完 {meat}")
+        print(f"{employee_name} 在 {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} 處理完{meat}")
 
 
 def working():
